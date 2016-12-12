@@ -58,9 +58,22 @@
 	font-size: 14px;
 	color: #5A95FA;
 	margin-left: 0;
+	z-index: 10；
 }
 .z-volume {
 	display: inline-block;
     width: 15px;
     cursor: pointer;
+}
+.z-prog-time {
+	position: absolute;
+    top: -10px;
+    left: -8px;
+    font-size: 12px;
+    color: #333;
+    height: 12px;
+    display: none;
+}
+.z-move-circle:hover .z-prog-time{
+	display: block;
 }
