@@ -1,0 +1,66 @@
+*{margin: 0; padding: 0; list-style: none; text-decoration: none;}
+
+.z-audio {
+	position: relative;
+	height: 32px;
+	display: inline-block;
+	background-color: #fafafa;
+	font-size: 14px;
+	padding-right: 15px;
+}
+.z-audio i {
+	font-size: 16px;
+	color: #333;
+	height: 100%;
+	line-height: 32px;
+}
+.z-switch {
+	width: 18px;
+	display: inline-block;
+	margin: 0 3px 0 18px;
+	cursor: pointer;
+}
+.z-now-time, .total-time {
+	color: #666;
+}
+.z-total-time {
+	margin-right: 10px;
+}
+.z-progress-bar {
+	position: relative;
+	display: inline-block;
+	margin: 0 10px;
+}
+.z-play-bar {
+	width: 150px;
+}
+.z-volume-bar {
+	width: 80px;
+}
+.z-prog-line {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 100%;
+	height: 2px;
+	background-color: #9c9c9c;
+}
+.z-prog-active-line {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	height: 2px;
+	width: 0;
+	background-color: #5A95FA;
+}
+.z-audio .z-move-circle {
+	position: relative;
+	font-size: 14px;
+	color: #5A95FA;
+	margin-left: 0;
+}
+.z-volume {
+	display: inline-block;
+    width: 15px;
+    cursor: pointer;
+}

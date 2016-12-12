@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>媒体元素</title>
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0\css\font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="media.css">
+</head>
+<body>
+	<div class="z-audio">
+		<!--[if !IE 8]><!-->
+			<span class="z-switch"><i class="fa fa-play"></i></span>
+			<span class="z-now-time">00:00</span>
+			<div class="z-progress-bar z-play-bar" _content = "play">
+				<div class="z-prog-line"></div>
+				<div class="z-prog-active-line"></div>
+				<i class="z-move-circle fa fa-circle"></i>
+			</div>
+			<span class="z-total-time">00:00</span>
+			<i class="z-volume fa fa-volume-up fa-volume-off"></i>
+			<div class="z-progress-bar z-volume-bar" _content = "volume">
+				<div class="z-prog-line"></div>
+				<div class="z-prog-active-line"></div>
+				<i class="z-move-circle fa fa-circle"></i>
+			</div>
+			<audio src="play.mp3" id="ZmyAudio" class="z-myAudio"></audio>
+		<!--<![endif]-->
+		<!--[if IE 8]> 
+			<embed type="audio/mp3" id="ZmyAudio" src="play.mp3" autostart=false  loop=false width ="200" height = "30"></embed>
+		<![endif]-->
+	</div>
+
+	<script type="text/javascript" src = "jquery.min.js"></script>
+	<script type="text/javascript" src = "media.js"></script>
+	<script type="text/javascript">
+		var audioNode = document.getElementById("ZmyAudio");
+		var med = new Media(audioNode);
+		med.init();
+	</script>
+</body>
+</html>
